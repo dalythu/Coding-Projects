@@ -9,6 +9,8 @@ let playerRank = '';
 
 // 3. Select the <main> HTML element
 
+const main = document.querySelector('main')
+
 /*
   4. Ask at least 5 questions
    - Store each answer in a variable
@@ -65,5 +67,5 @@ if ( correctAnswers > 4 ) {
 }
 
 // 6. Output results to the <main> element
-document.querySelector('main').innerHTML = `<p>Your final score is ${correctAnswers} and your rank is ${playerRank}<p>`
+main.innerHTML = `<p>Your final score is ${correctAnswers} and your rank is ${playerRank}<p>`
 
