@@ -55,5 +55,8 @@ if ( correctAnswers > 4 ) {
 }
 
 // 6. Output results to the <main> element
-main.innerHTML = `<p>Your final score is ${correctAnswers} and your rank is ${playerRank}<p>`
+main.innerHTML = `
+  <h2>You got ${correctAnswers} out of 5 questions correct.</h2> 
+  <p>Crown earned: ${playerRank}</p>
+`;
 
