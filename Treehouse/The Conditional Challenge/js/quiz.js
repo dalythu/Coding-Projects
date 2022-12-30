@@ -5,7 +5,7 @@
 let correctAnswers = 0;
 
 // 2. Store the rank of a player
-let playerRank = '';
+let playerRank;
 
 // 3. Select the <main> HTML element
 
