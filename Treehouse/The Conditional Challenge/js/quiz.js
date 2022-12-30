@@ -19,27 +19,22 @@ const main = document.querySelector('main')
 let questionOne = prompt('What is the capital of Georgia?').toUpperCase();
 if ( questionOne === 'ATLANTA' ) {
   correctAnswers += 1;
-  console.log(correctAnswers);
 }; 
 let questionTwo = prompt('What month is it?').toUpperCase();
 if ( questionTwo === 'DECEMBER' ) {
   correctAnswers += 1;
-  console.log(correctAnswers);
 }; 
 let questionThree = prompt('Is the sun out?').toUpperCase();
 if ( questionThree === 'NO' ) {
   correctAnswers += 1;
-  console.log(correctAnswers);
 }; 
 let questionFour = prompt('What color is your xBox?').toUpperCase();
 if ( questionFour === 'BLACK' ) {
   correctAnswers += 1
-  console.log(correctAnswers);
 };
 let questionFive = prompt('Who made the laptop you are using right now?').toUpperCase();
 if ( questionFive === 'APPLE' ) {
   correctAnswers += 1
-  console.log(correctAnswers);
 }; 
 
 /*
