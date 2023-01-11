@@ -29,7 +29,7 @@ const userSecondInput = prompt(`Enter a second number`);
 firstNumber = parseInt(userFirstInput);
 secondNumber = parseInt(userSecondInput);
 
-if (firstNumber || secondNumber) {
+if (firstNumber && secondNumber) {
     // Use Math.random() and the user's number to generate a random number
     let randomNumber = Math.floor(Math.random() * (secondNumber - firstNumber)) + firstNumber;
 
