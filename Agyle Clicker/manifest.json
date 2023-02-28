@@ -1,16 +1,30 @@
 {
-    "manifest_version": 2,
     "name": "Agyle Status Selector",
-    "version": "1.0",
+    "version": "0.1.0",
     "description": "A Chrome extension that automatically clicks a users Agyle status.",
     "permissions": [
         "activeTab", 
         "tabs"
     ],
+    "host_permissions": [
+        "https://*.mailchimp.zendesk.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
     "content_scripts": [
         {
-          "matches": ["https://mailchimp.zendesk.com/agent/dashboard"],
+          "matches": ["https://*.mailchimp.zendesk.com/*"],
           "js": ["content_script.js"]
         }
-    ]
+    ],
+    "action": {
+        "default_icon": {
+          "16": "assets/agyle.png",
+          "24": "assets/agyle.png",
+          "32": "assets/agyle.png"
+        },
+        "default_title": "Agyle Status Selector"
+    },
+    "manifest_version": 3
 }
